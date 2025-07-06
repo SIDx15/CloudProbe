@@ -9,7 +9,6 @@ steps:
     entrypoint: gcloud
     args: ['run', 'deploy', 'streamlit-app',
            '--image', 'gcr.io/$PROJECT_ID/streamlit-app',
-           '--region', 'us-central1',
+           '--region', 'asia-south1',
            '--platform', 'managed',
-           '--allow-unauthenticated',
-           '--port', '8501']
+           '--allow-unauthenticated']

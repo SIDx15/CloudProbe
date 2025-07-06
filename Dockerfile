@@ -16,7 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the Streamlit default port
-EXPOSE 8501
+ENV PORT 8080
+EXPOSE 8080
 
 # Run Streamlit
 CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.enableCORS=false"]
